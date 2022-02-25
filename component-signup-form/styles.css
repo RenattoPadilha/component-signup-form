@@ -1,4 +1,22 @@
 body{
     background-image: url("images/bg-intro-mobile.png");
     background-color: hsl(0, 100%, 74%);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.title{
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.title-subtitle-section{
+    color: #ffffff;
+    margin: 15vh 5vw 8vh;
+    text-align: center;
+}
+
+.subtitle{
+    font-size: 0.85rem;
+    font-weight: 400;
 }
