@@ -5,6 +5,16 @@ body{
     margin: 0;
 }
 
+.forms-description{
+    color: hsl(246, 25%, 77%);
+    font-size: 0.55rem;
+}
+
+.terms-and-services{
+    color: hsl(0, 100%, 74%);
+    font-weight: 600;
+}
+
 .title{
     font-size: 1.7rem;
     font-weight: 700;
