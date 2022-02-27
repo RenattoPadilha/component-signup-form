@@ -1,4 +1,38 @@
 body{
     background-image: url("images/bg-intro-mobile.png");
     background-color: hsl(0, 100%, 74%);
+    margin: 0;
+}
+
+.forms-section{
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin: 0 5vw;
+    padding: 3vh 5vw; 
+}
+
+.forms-button{
+    padding: 10px 0;
+    width: 100%;
+}
+
+.input-form{
+    border-radius: 5px;
+    border: 1px solid hsl(246, 25%, 77%);
+    box-sizing: border-box;
+    margin-bottom: 3vh;
+    padding: 15px;
+    width: 100%;
+}
+
+.input-form::placeholder{
+    color: hsl(249, 10%, 26%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.input-space{
+    position: relative;
+    width: 100%;
 }
