@@ -15,6 +15,13 @@ body{
     font-weight: 600;
 }
 
+.purple-box{
+    background-color: hsl(248, 32%, 49%);
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
 .title{
     font-size: 1.7rem;
     font-weight: 700;
@@ -24,6 +31,10 @@ body{
     color: #ffffff;
     margin: 15vh 5vw 8vh;
     text-align: center;
+}
+
+.try-free{
+    font-weight: 600;
 }
 
 .subtitle{
