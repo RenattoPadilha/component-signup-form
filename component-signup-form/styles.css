@@ -70,3 +70,40 @@ body{
 .show-error{
     opacity: 1 !important;
 }
+
+.forms-description{
+    color: hsl(246, 25%, 77%);
+    font-size: 0.55rem;
+}
+
+.terms-and-services{
+    color: hsl(0, 100%, 74%);
+    font-weight: 600;
+}
+
+.purple-box{
+    background-color: hsl(248, 32%, 49%);
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+.title{
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.title-subtitle-section{
+    color: #ffffff;
+    margin: 15vh 5vw 8vh;
+    text-align: center;
+}
+
+.try-free{
+    font-weight: 600;
+}
+
+.subtitle{
+    font-size: 0.85rem;
+    font-weight: 400;
+}
