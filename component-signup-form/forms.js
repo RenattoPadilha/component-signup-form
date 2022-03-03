@@ -5,45 +5,60 @@ const firstName = document.querySelector("#fFirstName");
 const lastName = document.querySelector("#fLastName");
 const email = document.querySelector("#fEmail");
 const password = document.querySelector("#fPassword");
-//Reference to error messagens
-const firstNameError = document.querySelector("#firstNameError");
-const lastNameError = document.querySelector("#lastNameError");
-const emailError = document.querySelector("#emailError");
-const passwordError = document.querySelector("#passwordError");
-
+//Reference to error messagens and images. 
+//0 -> FirstNameError, 1 - LastNameError, 2 - emailError, 3 - passwordError
+const errorMsgArray = document.querySelectorAll(".error-text-form");
+const errorImgArray = document.querySelectorAll(".error-symbol-form");
 
 form.addEventListener("submit" ,function(event){
     if (!form.checkValidity()){
-        event.preventDefault();
-        errorMsg();
+        event.preventDefault(); //prevent forms submission
+        showErrorMsg();
     }
 });
 
-function errorMsg(){
+function showErrorMsg(){
     //first name error
     if (firstName.validity.valueMissing){
-        firstNameError.textContent = "First Name cannot be empty";
+        firstName.classList.add("input-border-error");
+        errorMsgArray[0].textContent = "First Name cannot be empty";
+        errorImgArray[0].classList.add("show-error");
     } else{
-        firstNameError.textContent = "";
+        firstName.classList.remove("input-border-error");
+        errorMsgArray[0].textContent = "";
+        errorImgArray[0].classList.remove("show-error");
     }
     //last name error
     if (lastName.validity.valueMissing){
-        lastNameError.textContent = "Last Name cannot be empty";
+        lastName.classList.add("input-border-error");
+        errorMsgArray[1].textContent = "Last Name cannot be empty";
+        errorImgArray[1].classList.add("show-error");
     } else{
-        lastNameError.textContent = "";
+        lastName.classList.remove("input-border-error");
+        errorMsgArray[1].textContent = "";
+        errorImgArray[1].classList.remove("show-error");
     }
     //email error
     if (email.validity.valueMissing){
-        emailError.textContent = "Email cannot be empty";
+        email.classList.add("input-border-error");
+        errorMsgArray[2].textContent = "Email cannot be empty";
+        errorImgArray[2].classList.add("show-error");
     } else if (email.validity.typeMismatch){
-        emailError.textContent = "Looks like this is not an email";
+        email.classList.add("input-border-error");
+        errorMsgArray[2].textContent = "Looks like this is not an email";
     } else{
-        emailError.textContent = "";
+        email.classList.remove("input-border-error");
+        errorMsgArray[2].textContent = "";
+        errorImgArray[2].classList.remove("show-error");
     }
     //password error
     if (password.validity.valueMissing){
-        passwordError.textContent = "Password cannot be empty";
+        password.classList.add("input-border-error");
+        errorMsgArray[3].textContent = "Password cannot be empty";
+        errorImgArray[3].classList.add("show-error");
     } else{
-        passwordError.textContent = "";
+        password.classList.remove("input-border-error")
+        errorMsgArray[3].textContent = "";
+        errorImgArray[3].classList.remove("show-error");
     }
 }

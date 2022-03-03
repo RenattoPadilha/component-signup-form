@@ -2,6 +2,41 @@ body{
     background-image: url("images/bg-intro-mobile.png");
     background-color: hsl(0, 100%, 74%);
     margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.input-border-error{
+    border-color: hsl(0, 100%, 74%) !important;
+    border-width: 2px !important;
+    opacity: 0.9 !important;
+}
+
+.error-text-form{
+    color: hsl(0, 100%, 74%);
+    font-size: 0.6rem;
+    font-style: italic;
+    margin: 5px 0 0;
+}
+
+.error-symbol-form{
+    height: 40%;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+}
+
+.forms-button{
+    padding: 10px 0;
+    width: 100%;
+}
+
+.forms-line{
+    margin-bottom: 3vh;
+    position: relative;
+    text-align: right;
+    width: 100%;
 }
 
 .forms-section{
@@ -11,20 +46,16 @@ body{
     padding: 3vh 5vw; 
 }
 
-.forms-button{
-    padding: 10px 0;
-    width: 100%;
-}
-
 .input-form{
     border-radius: 5px;
     border: 1px solid hsl(246, 25%, 77%);
     box-sizing: border-box;
-    margin-bottom: 3vh;
+    opacity: 0.75;
     padding: 15px;
     width: 100%;
 }
 
+.input-form,
 .input-form::placeholder{
     color: hsl(249, 10%, 26%);
     font-family: 'Poppins', sans-serif;
@@ -34,5 +65,8 @@ body{
 
 .input-space{
     position: relative;
-    width: 100%;
+}
+
+.show-error{
+    opacity: 1 !important;
 }
