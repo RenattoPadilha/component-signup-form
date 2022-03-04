@@ -41,9 +41,11 @@ body{
 
 .forms-section{
     background-color: #ffffff;
-    border-radius: 5px;
-    margin: 0 5vw;
+    border-radius: 7.5px;
+    box-shadow: 0 7px rgba(0, 0, 0, 0.2);
+    margin: 0 5vw 10vh;
     padding: 3vh 5vw; 
+    text-align: center;
 }
 
 .input-form{
@@ -83,9 +85,18 @@ body{
 
 .purple-box{
     background-color: hsl(248, 32%, 49%);
+    border-radius: 7.5px;
+    box-shadow: 0 7px rgba(0, 0, 0, 0.2);
     color: #ffffff;
     font-size: 0.85rem;
     font-weight: 400;
+    margin: 0 5vw 3vh;
+    padding: 2vh;
+    text-align: center;
+}
+
+.purple-box-text{
+    margin: 0;
 }
 
 .title{
