@@ -28,7 +28,15 @@ body{
 }
 
 .forms-button{
-    padding: 10px 0;
+    background-color: hsl(154, 59%, 51%);
+    box-shadow: 0 5px hsl(154, 55%, 46%);
+    border-radius: 5px;
+    border-width: 0;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 15px 0 10px;
     width: 100%;
 }
 
@@ -75,7 +83,7 @@ body{
 
 .forms-description{
     color: hsl(246, 25%, 77%);
-    font-size: 0.55rem;
+    font-size: 0.65rem;
 }
 
 .terms-and-services{
