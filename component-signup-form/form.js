@@ -7,8 +7,8 @@ const email = document.querySelector("#fEmail");
 const password = document.querySelector("#fPassword");
 //Reference to error messagens and images. 
 //0 -> FirstNameError, 1 - LastNameError, 2 - emailError, 3 - passwordError
-const errorMsgArray = document.querySelectorAll(".error-text-form");
-const errorImgArray = document.querySelectorAll(".error-symbol-form");
+const errorMsgArray = document.querySelectorAll(".form-error-text");
+const errorImgArray = document.querySelectorAll(".form-error-symbol");
 
 form.addEventListener("submit" ,function(event){
     if (!form.checkValidity()){
