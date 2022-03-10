@@ -133,3 +133,34 @@ body{
     margin: 15vh 5vw 8vh;
     text-align: center;
 }
+
+@media only screen 
+    and (min-device-width: 481px){
+        .box-basics,
+        .title-subtitle-section{
+            margin-left: 12vw;
+            margin-right: 12vw;
+        }
+
+        .title{
+            font-size: 2.25rem;
+        }
+
+        .subtitle,
+        .purple-box-text,
+        .input-form-text,
+        .input-form::placeholder,
+        .form-button-text{
+            font-size: 1rem;
+        }
+
+        .form-description{
+            font-size: 0.75rem;
+        }
+    }
+
+/*
+(min-device-width: 769px) 
+(min-device-width: 1025px)
+(min-device-width: 1201px)
+*/
